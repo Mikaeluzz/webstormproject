@@ -1,0 +1,307 @@
+/*this is the record player
+ */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Frank+Ruhl+Libre:wght@300..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Stalinist+One&display=swap');
+.bangers-regular {
+    font-family: "Bangers", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Frank+Ruhl+Libre:wght@300..900&family=Inconsolata:wght@200..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Stalinist+One&display=swap');
+.playfair-display-sc-regular {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.playfair-display-sc-bold {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.playfair-display-sc-black {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.playfair-display-sc-regular-italic {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.playfair-display-sc-bold-italic {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.playfair-display-sc-black-italic {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+.player {
+    background-color: #efe9d3;
+    width: 430px;
+    height: 240px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 70%;
+    top: 50%;
+    border: #000000 5px solid;
+    border-radius: 8px;
+    box-shadow:7px 7px 0px rgba(0,0,0,1);
+}
+.record {
+    height: 220px;
+    width: 220px;
+    background-color: #9c1f25;
+    border:3px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.record:before,
+.record:after {
+    position: absolute;
+    content: "";
+    border: 5px solid transparent;
+    border-top-color: #691418;
+    border-bottom-color: #691418;
+    border-radius: 50%;
+}
+.record:before {
+    height: 135px;
+    width: 135px;
+}
+.record:after {
+    height: 95px;
+    width: 95px;
+}
+.label {
+    background-color: #9c1f25;
+    height: 15px;
+    width: 15px;
+    border: 20px solid #383632;
+    border-radius: 50%;
+}
+.tone-arm {
+    height:100px;
+    width: 6px;
+    background-color: #000000;
+    position: absolute;
+    top: 25px;
+    right: 125px;
+    transition: 1s;
+    transform-origin: top;
+}
+.control {
+    background-color: #181312;
+    height: 17px;
+    width: 17px;
+    border: 10px solid #2c2c2c;
+    border-radius: 50%;
+    position: absolute;
+    top: -16px;
+    left: -25px;
+}
+.tone-arm:before {
+    content: "";
+    height: 40px;
+    width: 6px;
+    background-color: #000000;
+    position: absolute;
+    transform: rotate(30deg);
+    bottom: -36px;
+    right: 10px;
+}
+.tone-arm:after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 10px;
+    border-top: 18px solid #000000;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    top: 118px;
+    right: 12.5px;
+    transform: rotate(30deg);
+}
+.btn {
+    height: 28px;
+    width: 28px;
+    background-color: #9c1f25;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    border: none;
+    border: 3.5px solid #000000;
+    outline: none;
+    cursor: pointer;
+}
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    transform: rotate(-90deg);
+    width: 110px;
+    height: 7px;
+    position: absolute;
+    left: 313px;
+    top: 70px;
+    background-color: #9c1f25;
+    outline: none;
+    border-radius: 3px;
+    border: 6px solid #000000;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 12px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.play {
+    transform: rotate(30deg);
+    transform-origin: top;
+    transition: 1s;
+}
+.on {
+    animation: spin 3s 1s linear infinite;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+body{
+    background-color: #efe9d3;
+}
+/* This is the navigation bar
+ */
+a{
+    text-decoration: none;
+    display: inline-block;
+    padding:9px 17px;
+    text-align: center;
+    border: #1e1916 solid 2px;
+    border-radius: 5px;
+    box-shadow:3px 3px 0px rgba(0,0,0,1);
+    margin-right: 30px;
+    margin-left: 30px;
+    align-content: center;
+    color: #1e1916;
+}
+
+a:hover{
+    position:relative;
+    left:4px;
+    top:2px;
+    background-color: #9c1f25;
+    color:#efe9d3;
+    box-shadow: 0 0 0;
+
+}
+
+#main{
+    width: 1180px;
+    height: 500px;
+    margin:15px;
+    display: inline-block;
+    border:3px #9c1f25 solid;
+}
+#homepage{
+    font-size: 24px;
+    position: relative;
+    left:20px;
+    background-color: #9c1f25;
+    color:#efe9d3;
+}
+
+#homepage:hover{
+    position:relative;
+    left:23px;
+    top:2px;
+    background-color: #691418;
+}
+#navbar{
+    position:relative;
+    left: 100px;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 17px;
+
+}
+
+h1{
+font-family: Bangers;
+    font-size: 70px;
+    position:relative;
+    top:70px;
+    left:90px;
+    letter-spacing: 2px;
+    text-shadow: #1e1916 1px 1px 0;
+    color : #9c1f25;
+}
+
+h2{
+    font-family:"georgia";
+    font-size: 20px;
+    width:400px;
+    position:relative;
+    top:30px;
+    left:110px;
+    color: black;
+}
+
+#arrow{
+    position: absolute;
+    top:400px;
+    left:975px;
+    width:70px;
+
+}
+
+#clickme{
+    position:absolute;
+    font-family:Bangers;
+    font-size: 30px;
+    letter-spacing: 2px;
+    top:420px;
+    left:855px;
+
+}
+
+#abtMe{
+    position:absolute;
+    top:360px;
+    left:220px;
+    border: #1e1916 solid 2px;
+    border-radius: 5px;
+    box-shadow:3px 3px 0px rgba(0,0,0,1);
+    padding:9px 17px;
+    background-color:#9c1f25;
+    font-size:15px;
+    color: #efe9d3;
+}
+
+#abtMe:hover{
+    position:absolute;
+    left:222px;
+    top:362px;
+    background-color: #691418;
+}

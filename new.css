@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Frank+Ruhl+Libre:wght@300..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Stalinist+One&display=swap');
+.bangers-regular {
+    font-family: "Bangers", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: #efe9d3;
+}
+/* This is the navigation bar
+ */
+a{
+    text-decoration: none;
+    display: inline-block;
+    padding:9px 17px;
+    text-align: center;
+    border: #1e1916 solid 2px;
+    border-radius: 5px;
+    box-shadow:3px 3px 0px rgba(0,0,0,1);
+    margin-right: 30px;
+    margin-left: 30px;
+    align-content: center;
+    color: #1e1916;
+}
+
+a:hover{
+    position:relative;
+    left:4px;
+    top:2px;
+    background-color: #9c1f25;
+    color:#efe9d3;
+    box-shadow: 0 0 0;
+
+}
+
+#homepage{
+    font-size: 24px;
+    position: relative;
+    left:20px;
+    background-color: #9c1f25;
+    color:#efe9d3;
+}
+
+#homepage:hover{
+    position:relative;
+    left:23px;
+    top:2px;
+    background-color: #691418;
+}
+#navbar{
+    position:relative;
+    left: 100px;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 17px;
+
+}
+
+
+#switchContainer{
+    position: absolute;
+    top: 130px;
+    left: 130px;
+    width: 75%;
+    height:70%;
+    border: 5px solid #1e1916;
+    border-radius: 50px;
+    background-color: #9c1f25;
+    box-shadow: 10px 10px #1e1916;
+}
+
+#screen{
+    position: absolute;
+    top: 148px;
+    left: 285px;
+    width: 50%;
+    height:63%;
+    background-color: #efe9d3;
+    border: 3px solid #1e1916;
+}
+
+.buttons{
+    position: absolute;
+    top: 190px;
+    left: 180px;
+    height: 60px;
+    width: 60px;
+    background-color: #efe9d3;
+    border: 4px solid #1e1916;
+    border-radius: 50%;
+    box-shadow: 4px 4px #1e1916;
+}
+
+.balls:hover{
+    box-shadow: 0 0;
+    position: absolute;
+    top: 192px;
+    left: 182px;
+}
+.joystick{
+    position:relative;
+    top: 340px;
+    left: 960px;
+}
+
+.joystick:hover{
+    box-shadow: 0 0;
+    position: relative;
+    top: 342px;
+    left: 962px;
+}
+
+.butt{
+    position: absolute;
+    top: 190px;
+    left: 180px;
+    height: 37px;
+    width: 37px;
+    background-color: #efe9d3;
+    border: 4px solid #1e1916;
+    border-radius: 50%;
+    box-shadow: 4px 4px #1e1916;
+}
+
+.up{
+    position:absolute;
+    top:350px;
+    left: 185px;
+}
+
+.up:hover{
+    box-shadow: 0 0;
+    position: absolute;
+    top: 352px;
+    left: 187px;
+}
+
+.down{
+    position:absolute;
+    top:430px;
+    left: 185px;
+}
+
+.down:hover{
+    box-shadow: 0 0;
+    position: absolute;
+    top: 432px;
+    left: 187px;
+}
+
+.left{
+    position:absolute;
+    top:390px;
+    left: 145px;
+}
+
+.left:hover{
+    box-shadow: 0 0;
+    position: absolute;
+    top: 392px;
+    left: 147px;
+}
+
+.right{
+    position:absolute;
+    top:390px;
+    left: 225px;
+}
+.right:hover{
+    box-shadow: 0 0;
+    position: absolute;
+    top: 392px;
+    left: 227px;
+}
+.backward{
+    position:absolute;
+    bottom:800px;
+    left: 800px;
+}
+
+h1{
+    font-family: Bangers;
+    color:#9c1f25;
+    font-size: 50px;
+    position:relative;
+    left:30px;
+}
+
+article{
+    display:inline-block;
+    width:70%;
+    height: 50%;
+    background-color: #691418;
+    position:relative;
+    left:120px;
+    border: 4px solid #1e1916;
+    box-shadow: 8px 8px #1e1916;
+}
+p{
+    font-size:20px;
+    color:#efe9d3;
+    font-family: Bangers;
+    letter-spacing: 2px;
+}
+#Link{
+  background-color: #efe9d3;
+}

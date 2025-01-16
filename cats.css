@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Frank+Ruhl+Libre:wght@300..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Stalinist+One&display=swap');
+.bangers-regular {
+    font-family: "Bangers", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    padding:9px 17px;
+    text-align: center;
+    border: #1e1916 solid 2px;
+    border-radius: 5px;
+    box-shadow:3px 3px 0px rgba(0,0,0,1);
+    margin-right: 30px;
+    margin-left: 30px;
+    align-content: center;
+    color: #1e1916;
+}
+
+a:hover{
+    position:relative;
+    left:4px;
+    top:2px;
+    background-color: #9c1f25;
+    color:#efe9d3;
+    box-shadow: 0 0 0;
+
+}
+
+#homepage{
+    font-size: 24px;
+    position: relative;
+    left:20px;
+    background-color: #9c1f25;
+    color:#efe9d3;
+}
+
+#homepage:hover{
+    position:relative;
+    left:23px;
+    top:2px;
+    background-color: #691418;
+}
+#navbar{
+    position:relative;
+    left: 100px;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 17px;
+
+}
+
+
+body{
+    background-image: url(img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100%;
+    overflow: hidden;
+}
+.overlap-container{
+    position: relative;
+    max-width: 1200px;
+    margin: 10px auto;
+    height: 65vh;
+    overflow: hidden;
+}
+
+.block{
+    position: absolute;
+    padding: 20px 30px;
+    background-image: url("20240820_143948.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.block:hover {
+    transform: translateX(20px) translateY(-20px);
+    z-index: 1;
+    box-shadow: 10px 5px 10px rgb(95, 92, 92);
+    height: 120px;
+}
+.block:nth-child(2) {
+    background-image: url("20240923_111410.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block:nth-child(3) {
+    background-image: url("20241027_123545.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block:nth-child(4) {
+    background-image: url("20241122_155521.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block:nth-child(5) {
+    background-image: url("20241122_143741.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block:nth-child(6) {
+    background-image: url("20241202_145430.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.eye {
+    width: 100px;
+    height: 100px;
+    background: #efe9d3;
+    border-radius: 50%;
+    margin: 27px;
+    position: relative;
+    top: 20px;
+    left: 448px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pupil {
+    width: 70px;
+    height: 70px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.eyes-container {
+    display: flex;
+}
